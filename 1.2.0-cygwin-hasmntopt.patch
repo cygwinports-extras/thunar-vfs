@@ -1,0 +1,13 @@
+--- origsrc/thunar-vfs-1.2.0/thunar-vfs/exo-mount-point.c	2011-01-16 10:48:38.000000000 -0600
++++ src/thunar-vfs-1.2.0/thunar-vfs/exo-mount-point.c	2011-01-19 01:58:07.889846100 -0600
+@@ -69,6 +69,10 @@
+ 
+ #include <thunar-vfs/exo-mount-point.h>
+ 
++#ifdef __CYGWIN__
++#define hasmntopt(x,y) NULL
++#endif
++
+ /**
+  * SECTION: exo-mount-point
+  * @title: Mount Points

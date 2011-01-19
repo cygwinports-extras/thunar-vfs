@@ -1,0 +1,6 @@
+category: Xfce
+requires: libexo1_0 libfreetype6 libgamin1_0 libgcc1 libgconf2_4 libgdk_pixbuf2.0_0 libglib2.0_0 libgtk2.0_0 libintl8 libjpeg8 libpng14 libstartup-notification1_0 libX11_6 libxfce4util4
+external-source: thunar-vfs
+sdesc: "Xfce4 VFS library (runtime)"
+ldesc: "Thunar is a modern file manager for the Xfce4 desktop,
+aiming to be easy-to-use and fast."

@@ -1,0 +1,10 @@
+inherit xfce4
+
+
+PATCH_URI="1.2.0-cygwin-hasmntopt.patch"
+
+PKG_NAMES="libthunar-vfs1_2 libthunar-vfs1-devel"
+libthunar_vfs1_2_CONTENTS="--exclude=gtk-doc usr/bin/cygthunar-vfs-1-2.dll usr/lib/thunar-vfs-1/ usr/share/"
+libthunar_vfs1_devel_CONTENTS="usr/include/ usr/lib/lib* usr/lib/pkgconfig/ usr/share/gtk-doc/"
+
+export PLATFORM_LDFLAGS="-no-undefined"
